@@ -7,6 +7,16 @@ body{
 	font: 1.3vw/1.5 Quicksand-Regular, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+   
+}
+::-moz-selection {
+    color: #000000;
+    background: #2effcb;
+}
+
+::selection {
+    color: #000000;
+    background: #2effcb;
 }
 .container{
     width: 80%;
@@ -26,7 +36,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #ffffff;
+    background-color: #2effcb;
     color: #000000;
     transition: .1s ease-in;
 }
@@ -38,20 +48,30 @@ nav a:hover {
 }
 #bnDiv{
     color: #2effcb;
-    min-height: inherit; /*From #bn*/
-    background: #000000d0;
+    min-height: inherit;
+    background: #000000c5;
 }
 #bn h1{
-    text-shadow: .1vw .2vw .2vw #2a2a2a8c;
+    text-shadow: .1vw .2vw .2vw #000000;
     padding-top: 14vw;
     margin: 0;
 }
 #bn2{
-    padding: 4vw 0;
+    min-height: 12vw;
     margin: 8vw 0;
     text-align: center;
     color: #ffffff;
-    background: #292929;
+    background:url("../img/background1.jpg") 0 0/100% 100% no-repeat fixed;
+}
+#bn2 div{
+    font-size: 1.8vw;
+    text-shadow: .1vw .2vw .2vw #000000;
+    padding-top: 5vw;
+    min-height: inherit;
+    background: #000000c7;
+}
+#bn3{
+    margin: 5vw auto; 
 }
 
 #btw{
@@ -68,8 +88,10 @@ nav a:hover {
 #btw p{text-align: justify;}
 
 #footer1{
+    border-top: .2vw #2effcb solid;
     color: #ffffff;
     background: #292929;
+    text-shadow: .1vw .2vw .2vw #000000;
 }
 #footer1 .section{
     width: 80%;
@@ -92,11 +114,12 @@ nav a:hover {
     text-decoration: underline;
 }
 #footer2{
+    /* border-top:  .07vw #2effcb solid; */
     background: #000000;
 }
 #footer2 p{
     text-align: center;
     color: #ffffff;
-    padding: 1vw 0;
+    padding: 1.3vw 0;
     margin: 0;
 }
